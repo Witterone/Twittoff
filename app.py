@@ -6,7 +6,9 @@ Created on Mon Jul 20 13:13:40 2020
 """
 from flask import Flask
 
-from .models import DB, User, add_test_users
+from .models import DB, User
+
+from .twitter import add_users
 
 def create_app():
     app = Flask(__name__)
@@ -26,7 +28,7 @@ def create_app():
     def add_users():
         DB.dropall()
         DB.create_all()
-        add_test_users()
+        add_users()
         return ('Users added!')
     
     @app.route('/view_test_users')
