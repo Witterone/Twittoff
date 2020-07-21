@@ -5,10 +5,10 @@ Created on Tue Jul 21 16:16:57 2020
 @author: Ronin
 """
 
-#This is where I would put my API keys had I actually gotten them from 
+#This is where I would put my API keys had I actually gotten them from
 #twitter but they have ignored my emails since Saturday
 
-TWITTER_API_KEY = "blah blah blah" 
+TWITTER_API_KEY = "blah blah blah"
 
 TWITTER_API_KEY_SECRET = "something long and hard to guess"
 
